@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container align-content-center" style="background-color: rgba(207, 207, 196, 0.685); border-radius: 35px; max-width: 90rem; min-height: 250px; padding: 5%">
+    <h3>{{message}}</h3>
+
+    <form method="post" action="{{url_for('login')}}">
+        <h2>Admin Password:</h2>
+        <br>
+        <input type="text" class="form-control" id="admin_pass" name="admin_pass" required>
+        <br>
+        <button type="submit" class="btn btn-secondary" style="width: 100%;">Login</button>
+    </form>
+</div>
+
+{% endblock %}
